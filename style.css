@@ -1,0 +1,233 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+html{overflow: hidden;}
+
+body{
+    background-image:linear-gradient(rgba(210, 240, 238, 0.54),rgba(210, 240, 238, 0.54)),url(images/board-001.jpg);
+    font-family:'EB Garamond', serif;
+    background-size: cover;
+    background background-repeat: no-repeat
+}
+
+.logo{
+    
+    width:400px;
+    text-align:left;
+    margin:10px 0px;
+   
+}
+.logo img{
+    width:90%;
+    height:90px;
+}
+
+.main-box{
+   
+    width:800px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    position:absolute;
+    overflow: hidden;
+    
+    
+}
+
+.player-0,.player-1{
+   
+    height:490px;
+    float:left;
+    width:50%;
+    border-radius:5%;
+    color:saddlebrown;
+    display: inline-block;
+    border:7px solid white;
+  
+    opacity: 0.8;
+   
+}
+.player-0{
+      background-color: #8de282;
+      border-right: none;
+}
+.player-1{
+    background-color: #e3e37b;
+      border-left:none;
+}
+ 
+p {
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom:40px;
+    font-size:200%;
+    text-transform:uppercase;
+    letter-spacing: 2px;
+    
+}
+#p-0{ margin-right:35px;}
+#p-1{
+    margin-left:40px;
+}
+
+
+.global-score-0,.global-score-1{
+   height:90px;
+    width:90px;
+    margin:0px 150px;
+    font-size:80px;
+     display:block;
+ 
+}
+.global-score-1{
+    margin:0px 190px;
+}
+
+.current-box{
+  
+    border-radius:5%;
+    height:90px;
+    width:110px;
+    margin:80px 80px 80px 120px;
+    display: inline-block;
+    background-color: rgb(74, 44, 20);
+    box-shadow:0px 7px 6px black;
+    
+}
+
+.secondbox{margin:80px 160px;}
+
+.current-label{
+    font-size:20px;
+    text-align:center;
+    font-weight:200;
+    padding:5px;
+    color:sandybrown;
+     
+}
+
+.score0,.score1{
+    padding:5px;
+    font-size:35px;
+    font-weight:50;
+    text-align:center;
+     color:white;
+    
+}
+
+
+.new-game{
+   position:absolute;
+   left: 40%;
+   top:10%;
+    font-size:23px;
+    letter-spacing: 1px;
+    border:none;
+    background:none;
+    color:saddlebrown;
+    font-family:'EB Garamond';
+    display: block;
+    cursor: pointer;
+}
+
+
+.roll{
+    position:absolute;
+    left: 40%;
+    top:70%;
+    font-size:23px;
+    letter-spacing: 1px;
+    border:none;
+    background:none;
+    color:saddlebrown;
+      font-family:'EB Garamond';
+     display: block;
+    cursor: pointer;
+}
+
+.hold{
+    position:absolute;
+    left: 44%;
+    top:80%;
+    font-size:23px;
+    letter-spacing: 1px;
+    border:none;
+    background:none;
+    color:saddlebrown;
+  font-family:'EB Garamond';
+     display: block;
+    cursor: pointer;
+}
+
+i{
+    padding-right: 6px;
+    color:rgb(74, 44, 20);
+    font-size: 25px;
+    vertical-align: middle;
+}
+
+
+.dices{
+    position:absolute;
+    height:90px;
+    width:90px;
+    left:44%;
+    top:36%;
+}
+
+.active{
+   opacity:1; 
+}
+.active p{
+ color:#ff0404;
+}
+
+.active p:after{
+    
+    content:' \2022';
+   
+}
+
+
+.winner{
+ animation-name: example;
+  animation-duration: 6s;
+    opacity:1;
+    color:white;
+}
+
+@keyframes example {
+  25%   {background-color: red;}
+  50% {background-color: yellow;}
+  100% {background-color: #70beb8;}
+}
+}
+
+
+
+.box{
+    position:absolute;
+    height:300px;
+    display: inline-block;
+}
+
+.how-to-play{
+    float:left;
+    margin-top:380px;
+    margin-left:10px;
+}
+.character{
+    float:right;
+    margin-top:150px;
+    
+}
+.character img{
+    height:450px;
+    width:350px;
+
+}
+
+
